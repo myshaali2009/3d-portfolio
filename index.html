@@ -1,0 +1,133 @@
+<!doctype html>
+<html lang="en">
+<head>
+  <meta charset="utf-8" />
+  <meta name="viewport" content="width=device-width,initial-scale=1" />
+  <title>Mysha — 3D Model Portfolio</title>
+  <link rel="stylesheet" href="styles.css" />
+  <meta name="description" content="Portfolio of Fusion 360 models by Mysha Ali." />
+</head>
+<body>
+  <header class="site-header">
+    <div class="container">
+      <h1>Mysha Ali — 3D Model Portfolio</h1>
+      <p class="subtitle">Fusion 360 models — interactive previews + downloads</p>
+      <nav class="top-nav">
+        <a href="#projects">Projects</a>
+        <a href="#about">About</a>
+        <a id="resume-link" href="assets/Mysha_Resume.pdf" target="_blank" rel="noopener">Resume (PDF)</a>
+      </nav>
+    </div>
+  </header>
+
+  <main class="container">
+    <section id="projects">
+      <h2>Projects</h2>
+
+      <!-- Project card template: copy this block to add new projects -->
+      <article class="card">
+        <div class="card-media">
+          <!-- Fusion 360 public link embedded as iframe -->
+          <iframe
+            src="https://a360.co/4m0Xmak"
+            title="Spur gear - Fusion 360 viewer"
+            loading="lazy"
+            allowfullscreen
+          ></iframe>
+        </div>
+        <div class="card-body">
+          <h3>Spur gear</h3>
+          <p>Simple spur gear modeled in Fusion 360 — exported STL available for download.</p>
+          <p class="meta"><strong>Tools:</strong> Fusion 360 • Export: STL</p>
+          <div class="card-actions">
+            <!-- Replace href with downloadable file path in repo (assets/spur-gear.stl) -->
+            <a class="btn" href="assets/spur-gear.stl" download>Download STL</a>
+            <a class="btn outline" href="https://a360.co/4m0Xmak" target="_blank" rel="noopener">Open in Fusion Viewer</a>
+          </div>
+        </div>
+      </article>
+
+      <article class="card">
+        <div class="card-media">
+          <iframe src="https://a360.co/3JMbqHf" title="Basic bolt - Fusion 360 viewer" loading="lazy" allowfullscreen></iframe>
+        </div>
+        <div class="card-body">
+          <h3>Basic bolt</h3>
+          <p>A basic bolt model — good for fasteners practice. Includes threads modeled parametrically.</p>
+          <p class="meta"><strong>Tools:</strong> Fusion 360</p>
+          <div class="card-actions">
+            <a class="btn" href="assets/basic-bolt.stl" download>Download STL</a>
+            <a class="btn outline" href="https://a360.co/3JMbqHf" target="_blank" rel="noopener">Open in Fusion Viewer</a>
+          </div>
+        </div>
+      </article>
+
+      <article class="card">
+        <div class="card-media">
+          <iframe src="https://a360.co/45QYqc4" title="Light bulb - Fusion 360 viewer" loading="lazy" allowfullscreen></iframe>
+        </div>
+        <div class="card-body">
+          <h3>Light bulb</h3>
+          <p>Decorative light bulb model with filament detail.</p>
+          <p class="meta"><strong>Tools:</strong> Fusion 360</p>
+          <div class="card-actions">
+            <a class="btn" href="assets/light-bulb.stl" download>Download STL</a>
+            <a class="btn outline" href="https://a360.co/45QYqc4" target="_blank" rel="noopener">Open in Fusion Viewer</a>
+          </div>
+        </div>
+      </article>
+
+      <article class="card">
+        <div class="card-media">
+          <iframe src="https://a360.co/4m8efjn" title="Slot head screwdriver - Fusion 360 viewer" loading="lazy" allowfullscreen></iframe>
+        </div>
+        <div class="card-body">
+          <h3>Slot head screwdriver</h3>
+          <p>Straight-slot screwdriver with ergonomic handle shape — designed for 3D printing.</p>
+          <p class="meta"><strong>Tools:</strong> Fusion 360 • Material test: PLA/TPU</p>
+          <div class="card-actions">
+            <a class="btn" href="assets/slot-screwdriver.stl" download>Download STL</a>
+            <a class="btn outline" href="https://a360.co/4m8efjn" target="_blank" rel="noopener">Open in Fusion Viewer</a>
+          </div>
+        </div>
+      </article>
+
+      <article class="card">
+        <div class="card-media">
+          <iframe src="https://a360.co/469g35M" title="Biker Plant Pot - Fusion 360 viewer" loading="lazy" allowfullscreen></iframe>
+        </div>
+        <div class="card-body">
+          <h3>Biker Plant Pot</h3>
+          <p>Small bike-themed plant pot with mounting holes — made for desktop plants.</p>
+          <p class="meta"><strong>Tools:</strong> Fusion 360 • Print: TPU for flexibility</p>
+          <div class="card-actions">
+            <a class="btn" href="assets/biker-plant-pot.stl" download>Download STL</a>
+            <a class="btn outline" href="https://a360.co/469g35M" target="_blank" rel="noopener">Open in Fusion Viewer</a>
+          </div>
+        </div>
+      </article>
+
+      <!-- End of project list -->
+    </section>
+
+    <section id="about" class="about">
+      <h2>About</h2>
+      <p>Hi—I'm Mysha. I model in Fusion 360 and design parts for prototyping and 3D printing. This portfolio contains interactive previews and downloadable files. For resume and contact, use the Resume link at the top or email me at <em>your-email@example.com</em> (replace this).</p>
+    </section>
+  </main>
+
+  <footer class="site-footer">
+    <div class="container">
+      <small>© <span id="year"></span> Mysha Ali — 3D modeling. Built with GitHub Pages.</small>
+    </div>
+  </footer>
+
+  <script>
+    // small script: current year and resume placeholder behavior
+    document.getElementById('year').textContent = new Date().getFullYear();
+
+    // If you want to replace the resume link quickly, change this URL.
+    // Example: document.getElementById('resume-link').href = 'assets/Mysha_Resume.pdf';
+  </script>
+</body>
+</html>
